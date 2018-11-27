@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+let me = {
+  name: 'Sarah',
+  age: 43
+}
+//alert (me.name)
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +30,15 @@
 */
 
 //Code here
+let favoriteThings = {
+  band: 'Imagine Dragons',
+  food: 'Mexican',
+  person: 'Mom',
+  book: 'A Tale of Two Cities',
+  movie: 'Return to Me',
+  holiday: 'Christmas'
 
+}
 
 
 /*
@@ -34,7 +46,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Audi Q7',
+favoriteThings.brand = 'Hallmark'
 
 
 /*
@@ -42,7 +55,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets',
+favoriteThings.book = 'Harry Potter'
 
 
 ////////// PROBLEM 3 //////////
@@ -56,15 +70,20 @@
 */
 
 //Code here
+let backPack = {
 
-
+}
+let item = 'firstPocket'
+backPack [item]='chapstick'
+backPack.color = 'pink'
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+//alert (backPack)
+console.log (backPack)
 
 
 /*
@@ -97,7 +116,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis',
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -120,7 +140,7 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection={};
 
 
 /*
@@ -129,7 +149,12 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello=function(){
+  alert('hello')
+}
+methodCollection.logHello=function(){
+  console.log('hello')
+}
 
 
 /*
@@ -137,7 +162,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello
+methodCollection.logHello
 
 
 ////////// PROBLEM 6 //////////
@@ -148,6 +174,14 @@ var user2 = {
 */
 
 //Code Here
+function makePerson(name,dob,ssn){
+  let person={
+    name: name,
+    birthday: dob,
+    ssn: ssn
+  }
+return person
+}
 
 
 
@@ -159,5 +193,12 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  let object={
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  return object
+}
 
